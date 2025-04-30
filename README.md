@@ -1,1 +1,2 @@
 # Portfolio_Resume
+This is a responsive and interactive personal portfolio website built using HTML5, CSS3, Bootstrap, JavaScript, and AOS (Animate on Scroll) library. It showcases my profile as a frontend developer, including sections like Hero, Projects, Tech Stack, About, and Contact. The layout is minimal, mobile-friendly, and animated with smooth scroll-based transitions to enhance user experience.
