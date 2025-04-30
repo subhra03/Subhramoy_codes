@@ -1,47 +1,37 @@
 /* General */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 16px; /* Base font size */
 }
 
-/* Navbar */
-.navbar {
-  background-color: #343a40;
-  padding: 10px;
-}
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-.navbar-brand img {
-  margin-right: 10px;
-}
-.navbar-text {
-  font-size: 1.2rem;
-}
-.navbar-nav .nav-link {
-  color: #fff;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
-}
+/* Navbar Hover */
 .navbar-nav .nav-link:hover {
   background-color: #495057;
 }
 
-
-.hero{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('asset/hero.webp') center center/cover no-repeat; 
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('asset/hero.webp') center center/cover no-repeat;
   min-height: 100vh;
 }
 
-
-
+/* Tech Card Hover */
+.tech-card {
+  transition: transform 0.3s ease;
+}
+.tech-card:hover {
+  transform: translateY(-8px);
+}
 
 /* Section Styling */
 .section {
-  padding: 50px 0;
+  padding: 5rem 1rem;
   opacity: 0;
   animation: fadeInUp 1s forwards;
   transform: translateY(20px);
@@ -50,60 +40,20 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Projects */
+.tech-icons i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  background-color: #fff;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-.tech-icons i {
-  font-size: 1.4rem;
-  margin-right: 10px;
-  color: #6c757d;
-  transition: color 0.3s;
-}
-
-.tech-icons i:hover {
-  color: #0d6efd;
-}
-
-
-/* Tech Stack Section */
-.tech-card {
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem 0.5rem;
-  margin: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-.tech-card i {
-  font-size: 2.5rem;
-  color: #0d6efd;
-  margin-bottom: 0.5rem;
-}
-
-.tech-card span {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #333;
-}
-
-.tech-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
 
 /* About Section Image */
 #about h2 {
@@ -123,12 +73,12 @@ body {
   transform: scale(1.05);
 }
 
+/* Button Styling */
 .btn-primary {
   padding: 0.6rem 1.4rem;
   border-radius: 2rem;
   font-weight: 500;
 }
-
 
 /* Form Styling */
 #contact h2 {
@@ -171,7 +121,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-
 /* Footer Styles */
 .social-icons {
   display: flex;
@@ -186,18 +135,14 @@ body {
 
 .social-icon:hover {
   transform: scale(1.2);
-  color: #1da1f2; /* Change to blue on hover for LinkedIn, GitHub, and Email */
-}
-
-.social-icon:hover .fab, .social-icon:hover .fas {
-  color: #1da1f2; /* LinkedIn blue */
+  color: #1da1f2;
 }
 
 footer p {
   color: #888;
 }
 
-
+/* Typed.js Styling */
 #typed-text {
   font-size: 2rem;
   font-weight: 700;
@@ -207,37 +152,179 @@ footer p {
   display: inline-block;
 }
 
-/* Blinking cursor */
 .typed-cursor {
   font-size: 2rem;
   color: #ffffff;
   animation: blink 0.7s infinite step-end;
 }
 
-/* Animation for cursor blinking */
+/* Blinking Animation */
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
 
-/* Optional: Adjust spacing and alignment for smaller screens */
-@media (max-width: 768px) {
-  footer .social-icons {
-    display: flex;
-    justify-content: center;
-  }
-
-  footer .social-icons a {
-    margin: 0 10px;
-  }
-}
-
-
 /* Animations */
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small Devices (Mobile) */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .hero {
+    background-size: cover;
+    min-height: 60vh; /* Adjust height for mobile */
+  }
+
+  #about h2 {
+    font-size: 1.8rem;
+  }
+
+  #about p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 25px; /* Smaller social icons */
+  }
+
+  #typed-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    min-height: 70vh;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    font-size: 28px;
+  }
+
+  #typed-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  body {
+    font-size: 16px; /* Standard font size for desktop */
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  #about h2 {
+    font-size: 2.4rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    padding: 0.8rem 1.6rem;
+  }
+
+  #contact h2 {
+    font-size: 2.2rem;
+  }
+
+  #contact p {
+    font-size: 1.1rem;
+  }
+
+  .social-icon {
+    font-size: 30px;
+  }
+
+  #typed-text {
+    font-size: 2rem;
+  }
+}
+
+/* Extra Large Devices (Larger Desktops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px; /* Increase font size for very large screens */
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  #about h2 {
+    font-size: 2.6rem;
+  }
+
+  #about p {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    padding: 1rem 2rem;
+  }
+
+  #contact h2 {
+    font-size: 2.4rem;
+  }
+
+  #contact p {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    font-size: 32px;
+  }
+
+  #typed-text {
+    font-size: 2.2rem;
   }
 }
