@@ -1,0 +1,243 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 10px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.navbar-brand img {
+  margin-right: 10px;
+}
+.navbar-text {
+  font-size: 1.2rem;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #495057;
+}
+
+
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('asset/hero.webp') center center/cover no-repeat; 
+  min-height: 100vh;
+}
+
+
+
+
+/* Section Styling */
+.section {
+  padding: 50px 0;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  transform: translateY(20px);
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icons i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: #6c757d;
+  transition: color 0.3s;
+}
+
+.tech-icons i:hover {
+  color: #0d6efd;
+}
+
+
+/* Tech Stack Section */
+.tech-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 0.5rem;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tech-card i {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
+}
+
+.tech-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About Section Image */
+#about h2 {
+  font-size: 2.2rem;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#about img {
+  transition: transform 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+
+/* Form Styling */
+#contact h2 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+#contact p {
+  color: #666;
+}
+
+#contact .form-control {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+  outline: none;
+}
+
+#contact .btn-primary {
+  border-radius: 2rem;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#contact .btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
+
+#form-toast {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Footer Styles */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #1da1f2; /* Change to blue on hover for LinkedIn, GitHub, and Email */
+}
+
+.social-icon:hover .fab, .social-icon:hover .fas {
+  color: #1da1f2; /* LinkedIn blue */
+}
+
+footer p {
+  color: #888;
+}
+
+
+#typed-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+/* Blinking cursor */
+.typed-cursor {
+  font-size: 2rem;
+  color: #ffffff;
+  animation: blink 0.7s infinite step-end;
+}
+
+/* Animation for cursor blinking */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Optional: Adjust spacing and alignment for smaller screens */
+@media (max-width: 768px) {
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .social-icons a {
+    margin: 0 10px;
+  }
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
