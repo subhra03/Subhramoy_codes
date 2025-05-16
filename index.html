@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Subhramoy Bhowmik – Front-End Web Developer portfolio showcasing skills, projects, and contact information.">
   <title>Subhramoy Bhowmik – Web Developer</title>
@@ -15,36 +15,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+<body>
   
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow-sm" data-aos="fade-down">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow-sm">
   <div class="container">
     <a href="#Home" class="navbar-brand d-flex align-items-center">
       <img src="asset/logo.png" width="40" alt="Subhramoy Logo" class="d-inline-block align-middle me-2" />
-      <span class="fw-bold">Subhramoy</span>
+      <span class="fw-bold fs-4">Subhramoy</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto gap-3">
         <li class="nav-item">
-          <a class="nav-link" href="#Home">
+          <a class="nav-link d-flex align-items-center" href="#Home">
             <i class="fas fa-home me-1"></i> Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">
+          <a class="nav-link d-flex align-items-center" href="#projects">
             <i class="fas fa-laptop-code me-1"></i> Projects
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">
+          <a class="nav-link d-flex align-items-center" href="#contact">
             <i class="fas fa-envelope me-1"></i> Contact
           </a>
         </li>
@@ -56,264 +63,258 @@
 
 
 
-  <!-- Hero Section -->
-  <section class="hero d-flex align-items-center justify-content-center text-white text-center min-vh-100" id="Home"
-    data-aos="zoom-out">
-    <div class="container px-4">
-      <div class="bg-dark bg-opacity-75 p-5 rounded-4 shadow-lg">
-        <h1 class="display-3 fw-bold mb-3" data-aos="fade-up">Subhramoy Bhowmik</h1>
-        <p class="lead fs-4 mb-4">
-          <span id="typed-text"></span><span class="typed-cursor"></span>
-        </p>
-        <a href="#projects" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill" data-aos="fade-up"
-          data-aos-delay="100">Explore My Work</a>
-      </div>
-    </div>
-  </section>
 
-
-  <!-- Tech Stack Section -->
-  <section id="techstack" class="py-5 bg-white" data-aos="zoom-in">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold" data-aos="fade-up">TECH STACK</h2>
-      <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
-        Technologies I use to build responsive and modern web interfaces.
+<!-- Hero Section -->
+<section
+  class="hero d-flex align-items-center justify-content-center text-white text-center min-vh-100"
+  id="Home"
+  data-aos="zoom-out">
+  <div class="container px-3 px-md-4">
+    <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-4 shadow-lg" style="max-width: 600px; margin: auto;">
+      <h1 class="display-4 display-md-3 fw-bold mb-3" data-aos="fade-up">
+        Subhramoy Bhowmik
+      </h1>
+      <p class="lead fs-5 fs-md-4 mb-4" data-aos="fade-up" data-aos-delay="50">
+        <span id="typed-text"></span><span class="typed-cursor"></span>
       </p>
-      <div class="row justify-content-center g-4">
-
-        <!-- HTML5 -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="200">
-          <div class="tech-card">
-            <i class="fab fa-html5 fa-3x text-danger" title="HTML5"></i>
-            <span class="d-block mt-2">HTML5</span>
-          </div>
-        </div>
-
-        <!-- CSS3 -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="300">
-          <div class="tech-card">
-            <i class="fab fa-css3-alt fa-3x text-primary" title="CSS3"></i>
-            <span class="d-block mt-2">CSS3</span>
-          </div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="400">
-          <div class="tech-card">
-            <i class="fab fa-js fa-3x text-warning" title="JavaScript"></i>
-            <span class="d-block mt-2">JavaScript</span>
-          </div>
-        </div>
-
-        <!-- Bootstrap -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="500">
-          <div class="tech-card">
-            <i class="fab fa-bootstrap fa-3x" style="color: #7952b3;"></i>
-            <span class="d-block mt-2">Bootstrap</span>
-          </div>
-        </div>
-
-        <!-- React -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="600">
-          <div class="tech-card">
-            <i class="fab fa-react fa-3x text-info" title="React"></i>
-            <span class="d-block mt-2">React</span>
-          </div>
-        </div>
-
-        <!-- Git -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="700">
-          <div class="tech-card">
-            <i class="fab fa-git-alt fa-3x text-danger" title="Git"></i>
-            <span class="d-block mt-2">Git</span>
-          </div>
-        </div>
-
-        <!-- GitHub -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="800">
-          <div class="tech-card">
-            <i class="fab fa-github fa-3x" title="GitHub"></i>
-            <span class="d-block mt-2">GitHub</span>
-          </div>
-        </div>
-
-        <!-- VS Code -->
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="900">
-          <div class="tech-card">
-            <i class="fas fa-code fa-3x text-secondary" title="VS Code"></i>
-            <span class="d-block mt-2">VS Code</span>
-          </div>
-        </div>
-
-      </div>
+      <a
+        href="#projects"
+        class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        >Explore My Work</a
+      >
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-light" data-aos="fade-up">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold" data-aos="fade-up">WHAT I’VE BUILT</h2>
-      <div class="row g-4">
 
-        <!-- Personal Portfolio -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card shadow-sm h-300 project-card">
-            <img src="asset/1.png" class="card-img-top" alt="Personal Website Portfolio UI" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Personal Website Portfolio UI</h5>
-              <p class="card-text">A modern and responsive personal portfolio design showcasing skills and work.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-bootstrap" title="Bootstrap"></i>
-              </div>
-              <a href="https://personal-website-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm"
-                target="_blank">Live Demo</a>
-            </div>
-          </div>
+
+<!-- Tech Stack Section -->
+<section id="techstack" class="py-5 bg-white" data-aos="zoom-in">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold" data-aos="fade-up">TECH STACK</h2>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+      Technologies I use to build responsive and modern web interfaces.
+    </p>
+    <div class="row justify-content-center g-4">
+
+      <!-- HTML5 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="200">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-html5 fa-3x text-danger" title="HTML5" aria-label="HTML5"></i>
+          <span class="mt-2 fw-semibold">HTML5</span>
         </div>
-
-        <!-- Bike UI -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/2.png" class="card-img-top" alt="Bike Website UI" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Bike Website UI</h5>
-              <p class="card-text">A UI for a bike e-commerce site built with HTML, CSS, and JavaScript.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-              </div>
-              <a href="https://bike-website-ui.vercel.app/" class="btn btn-outline-primary btn-sm" target="_blank">Live
-                Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bootstrap Portfolio -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/3.png" class="card-img-top" alt="Bootstrap Portfolio UI" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Bootstrap Portfolio UI</h5>
-              <p class="card-text">A clean and elegant portfolio layout built using Bootstrap components.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-bootstrap" title="Bootstrap"></i>
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-              </div>
-              <a href="https://bootstrap-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm"
-                target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Expense Tracker -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/4.png" class="card-img-top" alt="Expense Tracker" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Expense Tracker</h5>
-              <p class="card-text">A simple and functional app to track your daily expenses and manage budget.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-react" title="React"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-              </div>
-              <a href="https://expense-tracker-vert-eight.vercel.app/" class="btn btn-outline-primary btn-sm"
-                target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Student Reservation System -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/5.png" class="card-img-top" alt="Student Reservation System" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Student Reservation System</h5>
-              <p class="card-text">A web app for managing student reservations using a structured form-based interface.
-              </p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-              </div>
-              <a href="https://student-reservation-system.vercel.app/" class="btn btn-outline-primary btn-sm"
-                target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Loan Calculator App -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/6.png" class="card-img-top" alt="Loan Calculator App" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Loan Calculator App</h5>
-              <p class="card-text">A responsive loan calculator with EMI computation, currency conversion, and
-                dark/light theme.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-react" title="React"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fas fa-coins" title="EMI & Currency APIs"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <a href="https://loan-calculator-rouge-zeta.vercel.app/" class="btn btn-outline-primary btn-sm me-2"
-                  target="_blank">Live Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Twitter Clone -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/7.png" class="card-img-top" alt="Twitter Clone" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Twitter Clone</h5>
-              <p class="card-text">A functional Twitter clone UI built with React, featuring post layout, user
-                interactions, and clean styling.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-react" title="React"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <a href="https://twitter-clone-react-project.vercel.app/" class="btn btn-outline-primary btn-sm me-2"
-                  target="_blank">Live Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Music Player -->
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
-          <div class="card shadow-sm h-100 project-card">
-            <img src="asset/8.png" class="card-img-top" alt="Music Player" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Music Player</h5>
-              <p class="card-text">A sleek and modern music player UI built with React, featuring custom controls and
-                playlist management.</p>
-              <div class="tech-icons mb-3">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <a href="https://sb-music-player.vercel.app/" class="btn btn-outline-primary btn-sm me-2"
-                  target="_blank">Live Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- CSS3 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="300">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-css3-alt fa-3x text-primary" title="CSS3" aria-label="CSS3"></i>
+          <span class="mt-2 fw-semibold">CSS3</span>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="400">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-js fa-3x text-warning" title="JavaScript" aria-label="JavaScript"></i>
+          <span class="mt-2 fw-semibold">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="500">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-bootstrap fa-3x" style="color: #7952b3;" title="Bootstrap" aria-label="Bootstrap"></i>
+          <span class="mt-2 fw-semibold">Bootstrap</span>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="600">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-react fa-3x text-info" title="React" aria-label="React"></i>
+          <span class="mt-2 fw-semibold">React</span>
+        </div>
+      </div>
+
+      <!-- Git -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="700">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-git-alt fa-3x text-danger" title="Git" aria-label="Git"></i>
+          <span class="mt-2 fw-semibold">Git</span>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="800">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-github fa-3x" title="GitHub" aria-label="GitHub"></i>
+          <span class="mt-2 fw-semibold">GitHub</span>
+        </div>
+      </div>
+
+      <!-- VS Code -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="900">
+        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
+          <i class="fas fa-code fa-3x text-secondary" title="VS Code" aria-label="VS Code"></i>
+          <span class="mt-2 fw-semibold">VS Code</span>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold" data-aos="fade-up">WHAT I’VE BUILT</h2>
+    <div class="row g-4">
+
+      <!-- Personal Portfolio -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/1.png" class="card-img-top" alt="Personal Website Portfolio UI" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Personal Website Portfolio UI</h5>
+            <p class="card-text">A modern and responsive personal portfolio design showcasing skills and work.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            </div>
+            <a href="https://personal-website-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bike UI -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/2.png" class="card-img-top" alt="Bike Website UI" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bike Website UI</h5>
+            <p class="card-text">A UI for a bike e-commerce site built with HTML, CSS, and JavaScript.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+            </div>
+            <a href="https://bike-website-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Portfolio -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/3.png" class="card-img-top" alt="Bootstrap Portfolio UI" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bootstrap Portfolio UI</h5>
+            <p class="card-text">A clean and elegant portfolio layout built using Bootstrap components.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <a href="https://bootstrap-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expense Tracker -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/4.png" class="card-img-top" alt="Expense Tracker" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Expense Tracker</h5>
+            <p class="card-text">A simple and functional app to track your daily expenses and manage budget.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <a href="https://expense-tracker-vert-eight.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Reservation System -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/5.png" class="card-img-top" alt="Student Reservation System" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Student Reservation System</h5>
+            <p class="card-text">A web app for managing student reservations using a structured form-based interface.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <a href="https://student-reservation-system.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loan Calculator App -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/6.png" class="card-img-top" alt="Loan Calculator App" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Loan Calculator App</h5>
+            <p class="card-text">A responsive loan calculator with EMI computation, currency conversion, and dark/light theme.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-coins" title="EMI & Currency APIs"></i>
+            </div>
+            <a href="https://loan-calculator-rouge-zeta.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Twitter Clone -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/7.png" class="card-img-top" alt="Twitter Clone" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Twitter Clone</h5>
+            <p class="card-text">A functional Twitter clone UI built with React, featuring post layout, user interactions, and clean styling.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <a href="https://twitter-clone-react-project.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Player -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+        <div class="card shadow-sm h-300 project-card">
+          <img src="asset/8.png" class="card-img-top" alt="Music Player" loading="lazy">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Music Player</h5>
+            <p class="card-text">A sleek and modern music player UI built with React, featuring custom controls and playlist management.</p>
+            <div class="tech-icons mb-3">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+            </div>
+            <a href="https://sb-music-player.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 <!-- About Section -->
@@ -433,7 +434,7 @@
 
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-5 border-top border-secondary" data-aos="fade-up">
+<footer class="bg-dark text-white text-center py-5 border-top border-secondary">
   <div class="container">
     <p class="lead mb-4">Let’s Connect and Create Something Amazing!</p>
 
