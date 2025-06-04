@@ -1,12 +1,18 @@
-/* Prevent horizontal overflow globally */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body, html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-   font-family: "Rubik Moonrocks", sans-serif;
+  font-family: "Rubik Moonrocks", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
 }
+
 
 .hero {
   background: url('asset/hero.webp') no-repeat center center/cover;
