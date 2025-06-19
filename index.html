@@ -2,488 +2,609 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Subhramoy Bhowmik – Front-End Web Developer portfolio showcasing skills, projects, and contact information." />
-  <meta name="theme-color" content="#000000" />
-  <title>Subhramoy Bhowmik – Web Developer</title>
-
-  <link rel="icon" href="https://img.icons8.com/?size=100&id=61977&format=png&color=000000" type="image/png" />
-  
-  <!-- Fonts -->
-
-  <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Open Graph Meta (Optional for social sharing) -->
-  <meta property="og:title" content="Subhramoy Bhowmik – Web Developer" />
-  <meta property="og:description" content="Front-End Web Developer portfolio showcasing skills, projects, and contact information." />
-  <meta property="og:image" content="/preview.png" />
-  <meta property="og:type" content="website" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Subhramoy Bhowmik – Front-End Web Developer portfolio" />
+    <title>Subhramoy Bhowmik – Web Developer</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=61977&format=png&color=000000" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-  
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow-sm">
-  <div class="container">
-    <a href="#Home" class="navbar-brand d-flex align-items-center">
-      <img src="asset/logo.png" width="40" alt="Subhramoy Logo" class="d-inline-block align-middle me-2" />
-      <span class="fw-bold fs-4">Subhramoy</span>
-    </a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto gap-3">
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="#Home">
-            <i class="fas fa-home me-1"></i> Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="#projects">
-            <i class="fas fa-laptop-code me-1"></i> Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="#contact">
-            <i class="fas fa-envelope me-1"></i> Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="#home" class="navbar-brand">
+                <img src="asset/logo.png" alt="Subhramoy Logo" style="height: 40px;">
+            </a>
 
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-
-<!-- Hero Section -->
-<section
-  class="hero d-flex align-items-center justify-content-center text-white text-center min-vh-100"
-  id="Home"
-  data-aos="zoom-out">
-  <div class="container px-3 px-md-4">
-    <div class="bg-dark bg-opacity-75 p-4 p-md-5 rounded-4 shadow-lg" style="max-width: 600px; margin: auto;">
-      <h1 class="display-4 display-md-3 fw-bold mb-3" data-aos="fade-up">
-        Subhramoy Bhowmik
-      </h1>
-      <p class="lead fs-5 fs-md-4 mb-4" data-aos="fade-up" data-aos-delay="50">
-        <span id="typed-text"></span><span class="typed-cursor"></span>
-      </p>
-      <a
-        href="#projects"
-        class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        >Explore My Work</a
-      >
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Tech Stack Section -->
-<section id="techstack" class="py-5 bg-white" data-aos="zoom-in">
-  <div class="container text-center">
-    <h2 class="mb-4 fw-bold" data-aos="fade-up">TECH STACK</h2>
-    <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
-      Technologies I use to build responsive and modern web interfaces.
-    </p>
-    <div class="row justify-content-center g-4">
-
-      <!-- HTML5 -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="200">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-html5 fa-3x text-danger" title="HTML5" aria-label="HTML5"></i>
-          <span class="mt-2 fw-semibold">HTML5</span>
-        </div>
-      </div>
-
-      <!-- CSS3 -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="300">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-css3-alt fa-3x text-primary" title="CSS3" aria-label="CSS3"></i>
-          <span class="mt-2 fw-semibold">CSS3</span>
-        </div>
-      </div>
-
-      <!-- JavaScript -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="400">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-js fa-3x text-warning" title="JavaScript" aria-label="JavaScript"></i>
-          <span class="mt-2 fw-semibold">JavaScript</span>
-        </div>
-      </div>
-
-      <!-- Bootstrap -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="500">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-bootstrap fa-3x" style="color: #7952b3;" title="Bootstrap" aria-label="Bootstrap"></i>
-          <span class="mt-2 fw-semibold">Bootstrap</span>
-        </div>
-      </div>
-
-      <!-- React -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="600">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-react fa-3x text-info" title="React" aria-label="React"></i>
-          <span class="mt-2 fw-semibold">React</span>
-        </div>
-      </div>
-
-      <!-- Git -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="700">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-git-alt fa-3x text-danger" title="Git" aria-label="Git"></i>
-          <span class="mt-2 fw-semibold">Git</span>
-        </div>
-      </div>
-
-      <!-- GitHub -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="800">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fab fa-github fa-3x" title="GitHub" aria-label="GitHub"></i>
-          <span class="mt-2 fw-semibold">GitHub</span>
-        </div>
-      </div>
-
-      <!-- VS Code -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="flip-left" data-aos-delay="900">
-        <div class="tech-card p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center">
-          <i class="fas fa-code fa-3x text-secondary" title="VS Code" aria-label="VS Code"></i>
-          <span class="mt-2 fw-semibold">VS Code</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="py-5 bg-light" data-aos="fade-up">
-  <div class="container text-center">
-    <h2 class="mb-4 fw-bold" data-aos="fade-up">WHAT I’VE BUILT</h2>
-    <div class="row g-4">
-
-      <!-- Personal Portfolio -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/1.png" class="card-img-top" alt="Personal Website Portfolio UI" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Personal Website Portfolio UI</h5>
-            <p class="card-text">A modern and responsive personal portfolio design showcasing skills and work.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <i class="fas fa-house me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-code me-1"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user me-1"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <a href="https://personal-website-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </nav>
 
-      <!-- Bike UI -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/2.png" class="card-img-top" alt="Bike Website UI" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bike Website UI</h5>
-            <p class="card-text">A UI for a bike e-commerce site built with HTML, CSS, and JavaScript.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-pattern"></div>
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="container text-center hero-content" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="hero-title">Subhramoy Bhowmik</h1>
+            <p class="hero-subtitle">
+                I design and build modern web interfaces with focus on usability, performance, and beautiful user
+                experiences
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#projects" class="btn btn-primary btn-lg">
+                    View My Work <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                    Contact Me <i class="fas fa-paper-plane ms-2"></i>
+                </a>
             </div>
-            <a href="https://bike-website-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Bootstrap Portfolio -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/3.png" class="card-img-top" alt="Bootstrap Portfolio UI" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bootstrap Portfolio UI</h5>
-            <p class="card-text">A clean and elegant portfolio layout built using Bootstrap components.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-bootstrap" title="Bootstrap"></i>
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
+    <!-- Tech Stack Section -->
+    <section id="techstack" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold section-title" data-aos="fade-up">Tech Stack</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Technologies I use to build responsive, accessible, and modern web interfaces
+            </p>
+            <div class="row justify-content-center g-4">
+
+                <!-- Existing Items -->
+                <!-- HTML5 -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-html5 tech-icon text-danger"></i>
+                        <span class="fw-semibold">HTML5</span>
+                    </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-css3-alt tech-icon text-primary"></i>
+                        <span class="fw-semibold">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-js tech-icon text-warning"></i>
+                        <span class="fw-semibold">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-bootstrap tech-icon text-purple"></i>
+                        <span class="fw-semibold">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- React -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-react tech-icon text-info"></i>
+                        <span class="fw-semibold">React</span>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-git-alt tech-icon text-danger"></i>
+                        <span class="fw-semibold">Git</span>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="750">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-github tech-icon"></i>
+                        <span class="fw-semibold">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="550">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-js-square tech-icon text-primary"></i>
+                        <span class="fw-semibold">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Sass -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-sass tech-icon text-pink"></i>
+                        <span class="fw-semibold">Sass</span>
+                    </div>
+                </div>
+
+                <!-- NPM -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="650">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fab fa-npm tech-icon text-danger"></i>
+                        <span class="fw-semibold">NPM</span>
+                    </div>
+                </div>
+
+                <!-- Webpack -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="700">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
+                            alt="Webpack" width="40" height="40" class="mb-2">
+                        <span class="fw-semibold">Webpack</span>
+                    </div>
+                </div>
+
+                <!-- VS Code -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="750">
+                    <div class="tech-card p-4 rounded-4 h-100">
+                        <i class="fas fa-code tech-icon text-info"></i>
+                        <span class="fw-semibold">VS Code</span>
+                    </div>
+                </div>
+
             </div>
-            <a href="https://bootstrap-portfolio-ui.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Expense Tracker -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/4.png" class="card-img-top" alt="Expense Tracker" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Expense Tracker</h5>
-            <p class="card-text">A simple and functional app to track your daily expenses and manage budget.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-react" title="React"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
+
+    <!-- Compact Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold section-title" data-aos="fade-up">My Projects</h2>
+            <p class="text-center section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                A selection of my recent work showcasing different skills and technologies
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">personal-website-portfolio-ui.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/1.png" alt="Personal Portfolio" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Personal Portfolio UI</h4>
+                            <p class="text-muted mb-3">Modern responsive portfolio design showcasing skills and work</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">CSS</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://personal-website-portfolio-ui.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">bike-website-ui.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/2.png" alt="Bike Website" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Bike Website UI</h4>
+                            <p class="text-muted mb-3">UI for a bike e-commerce site with smooth animations</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">CSS</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://bike-website-ui.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">bootstrap-portfolio-ui.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/3.png" alt="Bootstrap Portfolio" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Bootstrap Portfolio</h4>
+                            <p class="text-muted mb-3">Clean portfolio layout built using Bootstrap components</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">Bootstrap</span>
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">CSS</span>
+                            </div>
+                            <a href="https://bootstrap-portfolio-ui.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">expense-tracker-vert-eight.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/4.png" alt="Expense Tracker" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Expense Tracker</h4>
+                            <p class="text-muted mb-3">Simple app to track daily expenses and manage budget</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://expense-tracker-vert-eight.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">student-reservation-system.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/5.png" alt="Student Reservation" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Student Reservation System</h4>
+                            <p class="text-muted mb-3">Web app for managing student reservations with forms</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://student-reservation-system.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">loan-calculator-rouge-zeta.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/6.png" alt="Loan Calculator" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Loan Calculator</h4>
+                            <p class="text-muted mb-3">Responsive calculator with EMI computation and themes</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">API</span>
+                            </div>
+                            <a href="https://loan-calculator-rouge-zeta.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">twitter-clone-react-project.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/7.png" alt="Twitter Clone" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Twitter Clone</h4>
+                            <p class="text-muted mb-3">Functional Twitter clone UI built with React</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://twitter-clone-react-project.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="computer-frame">
+                        <div class="computer-screen">
+                            <div class="browser-bar">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                                <div class="browser-url">sb-music-player.vercel.app</div>
+                            </div>
+                            <div class="project-screen">
+                                <img src="asset/8.png" alt="Music Player" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="computer-stand"></div>
+                        <div class="computer-base"></div>
+                        <div class="project-info">
+                            <h4>Music Player</h4>
+                            <p class="text-muted mb-3">Sleek music player UI with custom controls</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                            <a href="https://sb-music-player.vercel.app/" class="btn btn-primary btn-sm"
+                                target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <a href="https://expense-tracker-vert-eight.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Student Reservation System -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/5.png" class="card-img-top" alt="Student Reservation System" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Student Reservation System</h5>
-            <p class="card-text">A web app for managing student reservations using a structured form-based interface.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <img src="asset/my.jpg" alt="Subhramoy Bhowmik" class="img-fluid about-img floating">
+                </div>
+                <div class="col-lg-7 about-content" data-aos="fade-left" data-aos-delay="100">
+                    <h2 class="fw-bold mb-4 section-title">About Me</h2>
+                    <p class="about-text">
+                        I'm Subhramoy Bhowmik, a passionate front-end developer with expertise in creating modern,
+                        responsive web applications.
+                        My focus is on building intuitive user interfaces that combine aesthetics with functionality
+                        while ensuring accessibility
+                        and performance.
+                    </p>
+                    <p class="about-text">
+                        With professional experience in HTML, CSS, JavaScript, and React, I specialize in transforming
+                        complex requirements into
+                        clean, maintainable code. I'm constantly exploring new technologies and best practices to
+                        enhance my development workflow
+                        and deliver exceptional user experiences.
+                    </p>
+                    <p class="about-text">
+                        When I'm not coding, you can find me contributing to open-source projects, learning new design
+                        techniques, or exploring
+                        the latest web development trends.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="asset/cv.pdf" class="btn btn-primary px-4 d-inline-flex align-items-center gap-2"
+                            download aria-label="Download Subhramoy Bhowmik's Resume as PDF">
+                            <i class="fas fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <a href="https://student-reservation-system.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Loan Calculator App -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/6.png" class="card-img-top" alt="Loan Calculator App" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Loan Calculator App</h5>
-            <p class="card-text">A responsive loan calculator with EMI computation, currency conversion, and dark/light theme.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-react" title="React"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fas fa-coins" title="EMI & Currency APIs"></i>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="text-center section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-card">
+                        <form action="https://formspree.io/f/movdqbyd" method="POST">
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" name="message" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5">
+                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <a href="https://loan-calculator-rouge-zeta.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Twitter Clone -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/7.png" class="card-img-top" alt="Twitter Clone" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Twitter Clone</h5>
-            <p class="card-text">A functional Twitter clone UI built with React, featuring post layout, user interactions, and clean styling.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-react" title="React"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
+    <!-- Footer -->
+    <footer class="footer py-5 mt-5 text-white" style="background-color: #111;">
+        <div class="container text-center footer-content">
+            <h3 class="footer-title mb-4 fw-bold">
+                Let's Connect and Create Something Amazing!
+            </h3>
+
+            <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap" data-aos="fade-up">
+                <a href="mailto:subhramoy03@gmail.com" class="social-icon" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/share/14nnXLjsQT/" class="social-icon" title="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/_Subhra_?t=nqgr3rA9jchbLufsed7obA&s=08" class="social-icon"
+                    title="Twitter / X"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com/@subhramoy-03?si=djr8I1rVZaC6ysdJ" class="social-icon" title="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/subhramoy-bhowmik-8b6944242" class="social-icon"
+                    title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/subhra03" class="social-icon" title="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
-            <a href="https://twitter-clone-react-project.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
+
+            <p class="mb-0">
+                © <span id="year"></span> <strong>Subhramoy Bhowmik</strong>. All rights reserved.
+            </p>
         </div>
-      </div>
-
-      <!-- Music Player -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
-        <div class="card shadow-sm h-300 project-card">
-          <img src="asset/8.png" class="card-img-top" alt="Music Player" loading="lazy">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Music Player</h5>
-            <p class="card-text">A sleek and modern music player UI built with React, featuring custom controls and playlist management.</p>
-            <div class="tech-icons mb-3">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-js" title="JavaScript"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-            </div>
-            <a href="https://sb-music-player.vercel.app/" class="btn btn-outline-primary btn-sm mt-auto" target="_blank">Live Demo</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
 
-<!-- About Section -->
-<section id="about" class="py-5 bg-white">
-  <div class="container" data-aos="fade-up">
-    <div class="row g-5 align-items-center">
-      
-      <!-- Image Section -->
-      <div class="col-md-6 text-center" data-aos="fade-right" data-aos-delay="200">
-        <img src="asset/my.jpg" alt="Subhramoy Bhowmik's Photo"
-          class="img-fluid rounded-circle shadow about-img" width="200">
-      </div>
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-      <!-- Text Section -->
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
-        <h2 class="fw-bold mb-3">ABOUT ME</h2>
-        <p class="text-muted mb-2">
-          Hello! I'm <strong>Subhramoy Bhowmik</strong>, a passionate front-end developer who loves building beautiful
-          and responsive web applications. I enjoy turning complex problems into simple, clean UI designs.
-        </p>
-        <p class="text-muted">
-          My expertise lies in <strong>HTML, CSS, Bootstrap, JavaScript, React, and Redux</strong>. I'm constantly learning and
-          exploring new tools to improve the way I build software.
-        </p>
-        <a href="asset/cv.pdf" class="btn btn-primary mt-3" download="Subhramoy_Bhowmik_Resume.pdf">
-          <i class="fas fa-download me-2"></i>Download Resume
-        </a>
-      </div>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
-    </div>
-  </div>
-</section>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
 
-  <!-- Service Section -->
-  <section id="services" class="py-5 bg-light section section-base">
-    <div class="container text-center" data-aos="fade-up">
-      <h2 class="mb-4 fw-bold">THINGS I’M GOOD AT</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 shadow-sm-custom service-card">
-            <div class="card-body">
-              <i class="fas fa-code fa-2x mb-3 text-primary"></i>
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">Creating responsive and modern websites using HTML, CSS, JS, and React.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 shadow-sm-custom service-card">
-            <div class="card-body">
-              <i class="fas fa-bug fa-2x mb-3 text-danger"></i>
-              <h5 class="card-title">Testing</h5>
-              <p class="card-text">Performing thorough QA testing to ensure software quality and performance.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 shadow-sm-custom service-card">
-            <div class="card-body">
-              <i class="fas fa-tools fa-2x mb-3 text-warning"></i>
-              <h5 class="card-title">IT Support</h5>
-              <p class="card-text">Resolving technical issues, installing systems, and maintaining hardware/software.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-          <div class="card h-100 shadow-sm-custom service-card">
-            <div class="card-body">
-              <i class="fas fa-cloud fa-2x mb-3 text-info"></i>
-              <h5 class="card-title">Cloud</h5>
-              <p class="card-text">Deploying scalable cloud solutions with AWS, Azure, or Google Cloud.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
 
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
 
+        // Close mobile menu when clicking a nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
 
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-white" data-aos="fade-up">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold" data-aos="fade-up">CONTACT ME</h2>
-      <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
-        I'm open to collaboration, feedback, or just a friendly chat. Drop me a message below!
-      </p>
-      <div class="row justify-content-center">
-        <div class="col-md-8 contact-form-container" data-aos="fade-up" data-aos-delay="200">
-          <form action="https://formspree.io/f/movdqbyd" method="POST">
-            <div class="row mb-3">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" id="name" class="form-control" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea id="message" class="form-control" name="message" rows="5" placeholder="Your Message"
-                required></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-5 border-top border-secondary">
-  <div class="container">
-    <p class="lead mb-4">Let’s Connect and Create Something Amazing!</p>
-
-<div class="d-flex justify-content-center mb-4">
-  <a href="mailto:subhramoy03@gmail.com" class="fa-solid fa-envelope social-icon" aria-label="Email"></a>
-  <a href="https://www.facebook.com/share/14nnXLjsQT/" class="fa-brands fa-facebook social-icon" aria-label="Facebook"></a>
-  <a href="https://x.com/_Subhra_?t=nqgr3rA9jchbLufsed7obA&s=08" class="fa-brands fa-twitter social-icon" aria-label="Twitter"></a>
-  <a href="https://youtube.com/@subhramoy-03?si=djr8I1rVZaC6ysdJ" class="fa-brands fa-youtube social-icon" aria-label="YouTube"></a>
-  <a href="https://www.linkedin.com/in/subhramoy-bhowmik-8b6944242" class="fa-brands fa-linkedin social-icon" aria-label="LinkedIn"></a>
-  <a href="https://github.com/subhra03" class="fa-brands fa-github social-icon" aria-label="GitHub"></a>
-</div>
-
-
-
-    <p class="small mb-0">Built with 💻 and ☕ by <strong>Subhramoy Bhowmik</strong></p>
-  </div>
-</footer>
-
-
-
-
-  <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  const typed = new Typed("#typed-text", {
-    strings: ["Front-End Developer", "React Enthusiast", "Creative Coder"],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true,
-  });
-</script>
-
-
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
